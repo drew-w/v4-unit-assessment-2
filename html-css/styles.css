@@ -1,14 +1,194 @@
-/* 
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+:root {
+    --black: rgb(37, 37, 37);
+    --blue: rgb(42, 171, 226);
+    --shadow: rgba(102, 75, 75, .3);
+    --white: rgb(225, 225, 225);
+}
 
-these are the colors used in the example
-***you can use them if you'd like or you can choose your own***
+body{
+    background-color: var(--white);
+    font-family: 'Nunito', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
 
-black - rgb(37, 37, 37)
-blue - rgb(42, 171, 226)
-shadow - rgba(102, 75, 75, .3)
-white - rgb(255, 255, 255) (default value) 
+header{
+    background-color: var(--black);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-the font is called 'nunito' and can be found on google fonts
-***you can use it if you'd like or you can choose your own***
+}
 
-*/
+.heading{
+    /* border: 1px solid blueviolet; */
+    width: 40%;
+    height: 100%;
+    padding: 10px;
+    color: var(--blue);
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .top{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+     height: 100%;
+     padding-left: 20%;
+ }
+
+button{
+    background-color: #4caf4f00;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.first-section{
+    /* border: 1px solid blueviolet; */
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-article{
+    /* border: 1px solid blue; */
+    margin: 10px;
+    height: 90%;
+    width: 60%;
+    overflow: scroll;
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+.main-article h2{
+    position: sticky;
+}
+
+.main-article p{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.6;
+}
+
+.sidebar{
+    /* border: 1px solid red; */
+    margin: 10px;
+    height: 90%;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile{
+    width: 80%;
+    height: 300px;
+    background-color: white;
+    /* border: 1px solid darkolivegreen; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0px 0px 18px 18px rgba(102,75,75,0.3);
+    -webkit-box-shadow: 0px 0px 20px 20px rgba(102,75,75,0.3);
+    -moz-box-shadow: 0px 0px 20px 20px rgba(102,75,75,0.3);
+}
+
+.profile img{
+    width: 70%;
+    margin-top: 20px;
+}
+
+.profile h2{
+    padding: 20px
+}
+
+.popular-articles{
+    width: 80%;
+    height: 500px;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: 0px 0px 18px 18px rgba(102,75,75,0.3);
+    -webkit-box-shadow: 0px 0px 20px 20px rgba(102,75,75,0.3);
+    -moz-box-shadow: 0px 0px 20px 20px rgba(102,75,75,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-articles ol{
+    font-family: 'Nunito', sans-serif;
+    line-height: 2.6;
+}
+
+.second-section{
+    /* border: 1px solid blueviolet; */
+    width: 65%;
+    height: 550px;
+    margin-left: 60px;
+    padding: 10px;
+    position: relative;
+}
+.second-section p{
+    color: var(--blue);
+    text-align: right;
+}
+
+.image-gallery{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 80%;
+    margin-left: -10px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.placeholder{
+    width: 250px;
+}
+
+footer{
+    background-color: var(--blue);
+    width: 100vw;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#circle{
+    height: 60px;
+    width: 60px;
+    border: 5px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
