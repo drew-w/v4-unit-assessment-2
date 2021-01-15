@@ -158,10 +158,12 @@ button{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow: scroll;
 }
 
 .placeholder{
     width: 250px;
+    margin: 20px
 }
 
 footer{
@@ -186,6 +188,11 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: larger;
+    background-color: var(--blue);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px
 }
 
 a{
